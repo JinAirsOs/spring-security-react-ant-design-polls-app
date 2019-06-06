@@ -58,8 +58,12 @@ public class Choice {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Choice choice = (Choice) o;
         return Objects.equals(id, choice.id);
     }
